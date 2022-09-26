@@ -20,49 +20,46 @@
   <body>
     <header class="header">
       <div class="container header__item">
-          <a class="logo no_underline" href="index.html"
-            ><span class="web">Web</span>Studio</a
-          >
-          <nav>
-            <ul class="nav_list">
-              <li>
-                <a class="link no_underline" href="index.html">Agencja</a>
-              </li>
-              <li>
-                <a class="link no_underline" href="portfolio.html">Portfolio</a>
-              </li>
-              <li><a class="link no_underline" href="#">Kontakt</a></li>
-            </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__items">
-              <a
-                class="contacts__text no_underline"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+        <a class="logo no_underline" href="index.html"
+          ><span class="web">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="nav_list">
+            <li>
+              <a class="link no_underline nav_list-hover" href="index.html"
+                >Agencja</a
               >
-              <svg
-                  class="icon-envelope"
-                  width="16"
-                  height="12"
-                >
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
             </li>
-            <li class="contacts__items">
-              <a class="contacts__text no_underline" href="tel:+48111111111"
-                >+48 111 111 111</a
+            <li>
+              <a class="link no_underline nav_list-active" href="portfolio.html"
+                >Portfolio</a
               >
-              <svg
-                  class="icon-smartphone"
-                  width="10"
-                  height="16"
-                >
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
+            </li>
+            <li>
+              <a class="link no_underline nav_list-hover" href="#">Kontakt</a>
             </li>
           </ul>
-        </section>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__items">
+            <a
+              class="contacts__text no_underline"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <svg class="icon-envelope" width="18" height="13">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+          </li>
+          <li class="contacts__items">
+            <a class="contacts__text no_underline" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+            <svg class="icon-smartphone" width="12" height="18">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -86,8 +83,9 @@
         </ul>
         <ul class="container list_portfolio">
           <li class="list_portfolio__item">
-            <figure class="figure">
+            <figure class="figure thumb overlay-box">
               <img
+                class=""
                 src="./images/technocrack.jpg"
                 alt="zdjęcia trzech osób"
                 width="370"
@@ -95,10 +93,18 @@
               />
               <h3 class="list_portfolio__title">Technocrack</h3>
               <p class="list_portfolio__description">Strona internetowa</p>
+              <div class="overlay-technocrack">
+                <p class="overlay__text">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </p>
+              </div>
             </figure>
           </li>
           <li class="list_portfolio__item">
-            <figure class="figure">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/new_orleans.jpg"
                 alt="dwóch zawodników walczących o piłkę"
@@ -109,10 +115,19 @@
                 Grafika New Orlean vs Golden Star
               </h3>
               <p class="list_portfolio__description">Dizajn</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/seafood.jpg"
                 alt="logo restauracji"
@@ -121,10 +136,19 @@
               />
               <h3 class="list_portfolio__title">Restauracja Seafood</h3>
               <p class="list_portfolio__description">Aplikacja</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/projekt_prime.jpg"
                 alt="słuchawki"
@@ -133,10 +157,19 @@
               />
               <h3 class="list_portfolio__title">Projekt Prime</h3>
               <p class="list_portfolio__description">Marketing</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/projekt_boxes.jpg"
                 alt="pudełka"
@@ -145,10 +178,19 @@
               />
               <h3 class="list_portfolio__title">Projekt Boxes</h3>
               <p class="list_portfolio__description">Aplikacja</p>
-            </figure class="figure">
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
+            </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/inspiration.jpg"
                 alt="podgląd strony internetowej z mapą świata"
@@ -157,10 +199,19 @@
               />
               <h3 class="list_portfolio__title">Inspiration has no Borders</h3>
               <p class="list_portfolio__description">Strona internetowa</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/limited_edition.jpg"
                 alt="otwarte czasopismo"
@@ -169,10 +220,19 @@
               />
               <h3 class="list_portfolio__title">Magazyn Limited Edition</h3>
               <p class="list_portfolio__description">Dizajn</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
-          <li class="list_portfolio__item">
-            <figure class="figure">
+          <li class="list_portfolio__item thumb">
+            <figure class="figure thumb overlay-box">
               <img
                 src="./images/projekt_lab.jpg"
                 alt="etykieta"
@@ -181,18 +241,38 @@
               />
               <h3 class="list_portfolio__title">Projekt LAB</h3>
               <p class="list_portfolio__description">Marketing</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
           <li class="list_portfolio__item">
-            <figure class="figure">
-              <img
-                src="./images/growing_business.jpg"
-                alt="laptop"
-                width="370"
-                height="294"
-              />
+            <figure class="figure thumb overlay-box">
+              <div class="overlay-box">
+                <img
+                  src="./images/growing_business.jpg"
+                  alt="laptop"
+                  width="370"
+                  height="294"
+                />
+              </div>
               <h3 class="list_portfolio__title">Growing Business</h3>
               <p class="list_portfolio__description">Aplikacja</p>
+              <div class="overlay">
+                <p class="overlay__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem repellendus temporibus, nam a excepturi voluptates
+                  dolorem nihil autem qui, libero nisi repudiandae, velit atque
+                  blanditiis cupiditate fugiat? Dignissimos, praesentium
+                  delectus?
+                </p>
+              </div>
             </figure>
           </li>
         </ul>
@@ -202,12 +282,17 @@
       <section class="footer_container">
         <div class="footer__items">
           <a class="footer__logo no_underline" href="index.html"
-            ><span class="web">Web</span><span class="studio">Studio</span></a>
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          >
           <div class="footer__contacts">
-            <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <address class="address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
             <ul class="footer__contacts-list">
               <li>
-                <a class="contacts__text no_underline" href="mailto:info@example.com"
+                <a
+                  class="contacts__text no_underline"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
@@ -223,34 +308,64 @@
           <div>
             <h3 class="footer__socials__title">DOŁĄCZ DO NAS</h3>
             <div>
-              <ul class=footer__socials__items>
-                <li><a class=footer__socials__link href="#"><svg
-                  class="icon-social2"
-                >
-                  <use href="./images/icons.svg#icon-instagram-2"
-                  width="20"
-                  height="20" x="12" y="12"></use>
-                </svg></a></li>
-                <li><a class=footer__socials__link href="#"><svg
-                  class="icon-social2"
-                >
-                  <use href="./images/icons.svg#icon-twitter-1" width="20"
-                  height="20" x="13" y="12"></use>
-                </svg></a></li>
-                <li><a class=footer__socials__link href="#"><svg
-                  class="icon-social2"
-                >
-                  <use href="./images/icons.svg#icon-facebook-1" width="20"
-                  height="20" x="12" y="12"></use>
-                </svg></a></li>
-                <li><a class=footer__socials__link href="#"><svg
-                  class="icon-social2">
-                  <use href="./images/icons.svg#icon-linkedin-1" width="20"
-                  height="20" x="13" y="12"></use></svg></a></li>
-              </ul>  
+              <ul class="footer__socials__items">
+                <li>
+                  <a class="footer__socials__link" href="#"
+                    ><svg class="icon-social2">
+                      <use
+                        href="./images/icons.svg#icon-instagram-2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__socials__link" href="#"
+                    ><svg class="icon-social2">
+                      <use
+                        href="./images/icons.svg#icon-twitter-1"
+                        width="20"
+                        height="20"
+                        x="13"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__socials__link" href="#"
+                    ><svg class="icon-social2">
+                      <use
+                        href="./images/icons.svg#icon-facebook-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__socials__link" href="#"
+                    ><svg class="icon-social2">
+                      <use
+                        href="./images/icons.svg#icon-linkedin-1"
+                        width="20"
+                        height="20"
+                        x="13"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
+      </section>
     </footer>
   </body>
 </html>
